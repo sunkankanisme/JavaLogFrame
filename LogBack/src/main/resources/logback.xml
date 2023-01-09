@@ -24,6 +24,14 @@
         </filter>
     </appender>
 
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <encoder>
+            <pattern>%-50date %class %line %msg%n</pattern>
+        </encoder>
+        <file>d://test.log</file>
+        <append>true</append>
+    </appender>
+
     <appender name="ROLLING-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>test.log</file>
         <encoder>
